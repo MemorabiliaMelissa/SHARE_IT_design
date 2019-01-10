@@ -1,0 +1,260 @@
+<!doctype html>
+
+<!--////////////BOOTSTRAP STARTER TEMPLATE//////////////////////////-->
+
+<!--This tag is needed, it tells the browser, Google Chrome, that the page is a html page.-->
+<html lang="en"><!--html is the tag, 'lang' is an attribute of that tag, pay attention to the closing tag.-->
+
+<head><!--The head is the brain. We can't see anything on our web page in here.-->
+
+<!-- Required meta tags-->
+<!--Sometimes some characters are not recognised, e.g., " € $, 'utf-8' is a set of characters we will need.-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--This line renders the page content as good as possible on any device, resolution.-->
+
+<!-- Bootstrap CSS-->
+<!--Here we are linking to the Bootstrap css style sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!--Linking google font from css guidelines on website when you click plus on the font option, before my own style sheet-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800|Open+Sans:400,800" rel="stylesheet">
+    
+<!--Here I will link my own css page, we load Bootstrap first and then ours, the order is important, components of Bootstrap but overide the generic styling with our own css sheet-->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <title>#SHAREIT.</title><!--Page title-->
+    
+</head><!--Closing head-->
+
+<body><!--Everything we see on the web page sits in the body-->
+
+<!--Parent container-->
+    <div class="container-fluid px-0">
+
+<!--//////////////////////START OF NAV/////////////////////////////-->
+
+        <div class="row header fixed-top">
+
+<!--This row is for the header. Navigation detail will be displayed here.-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="heading2 ex1">#SHAREIT.</a>
+                        <a href="topics.html" class="heading2 ex1">Topics</a>
+                        <a href="play.html" class="heading2 ex1">Play</a>
+                        <a href="https://cybersafeireland.org/" class="heading2 h1home ex1">Find out more?</a>
+                    </div>
+            </div><!--This code above is for the opening and closing of the hamburger icon.-->
+
+<!--Start of responsive nav, headings.-->
+            <div class="col-1 paddingtop marginleft">
+                <a href="index.html" class="neutral1 bold navwebfont ex1"><span class="accentturquoise">#</span>SHAREIT<span class="accentturquoise">.</span></a>
+            </div>
+
+            <span class="d-none d-sm-block">
+
+                <div class="col-xl-1 offset-xl-1 col-sm-2 offset-sm-2 paddingtop marginleft"> <a href="topics.html" class="navwebfont neutral1 bold topics block ex1">Topics</a></div>
+
+            </span>
+
+            <span class="d-none d-sm-block">
+
+                <div class="col-xl-1 offset-xl-1 col-sm-1 offset-sm-1 paddingtop marginleft"> <a href="play.html" class="navwebfont neutral1 bold topics block ex1">Play</a></div>
+
+            </span>
+
+            <span class="d-none d-sm-block ">
+
+                <div class="col-12 paddingtop marginleft">
+                    <span><a href="https://cybersafeireland.org/" class="accentturquoise bold navwebfont2 ex4">Find out more?</a></span>
+                </div>
+
+            </span><!--End of responsive nav, headings.-->
+
+<!--Start of the hamburger icon.-->
+            <div class="col-1 offset-8">
+
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menupadding d-xl-none"><img src="images/hamburgermenu.svg" width="24px"></span>
+
+            </div>
+
+<!--Below is the script for opening and closing the fullscreen nav.-->
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.height = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.height = "0%";
+                }
+
+            </script>
+
+        </div>
+
+<!--////////////////////////////END OF NAV//////////////////////////-->
+
+<!--////////////////////////START OF PARALLAX////////////////////// -->
+
+        <div class="row rowheight">
+
+            <div class="parallax-container">
+
+                <div class="parallax-layer layer-0" data-parallax-speed="0.3" data-max-scroll="565"></div>
+
+                <div class="parallax-layer layer-1" data-parallax-speed=".5" data-max-scroll="565"></div>
+
+                <div class="parallax-layer layer-2" data-parallax-speed="1" data-max-scroll="565"></div>
+
+                <div class="parallax-layer layer-3" data-parallax-speed=".3" data-max-scroll="565"></div>
+
+                <div class="row parallax-layer layer-6">
+
+                    <div class="col-xl-5 offset-xl-1 col-sm-12">
+
+                        <h1 class="heading1 toppagepadding">Flip a card<span class="accentturquoise">.</span> <br>Solve a clue<span class="accentturquoise">.</span> <br>Talk <span class="accentturquoise">technology.</span>
+                        </h1>
+
+                    </div>
+
+                    <div class="col-xl-3 offset-xl-2 col-sm-12">
+
+                        <h1 class="title toppagepaddingtitle"><span class="accentturquoise">#</span>SHAREIT<span class="accentturquoise">.</span></h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--Website content attached to parallax.-->           
+            <div class="contentindex content1 px-0 mx-0">
+                
+<!--//////////////////////////ROW 1/////////////////////////////////-->
+                
+                <div class="row backgroundblobs topblobrowheight">
+
+                    <div class="col-xl-3 offset-xl-1 col-sm-12">
+                        <h1 class="heading2">Conversation <br>and navigation.</h1>
+                    </div>
+
+                    <div class="col-xl-5 offset-xl-2 col-sm-12">
+                        <p class="pweb phome"><span class="rwd-line">Having regular communication creates an open</span> <span class="rwd-line">and trusting relationship between you and your child.</span> <span class="rwd-line">Your child’s online safety is essential which means</span> informing them is protecting them!</p>
+                        <p class="pweb"><span class="rwd-line">Take time out and be part of our card game, in partnership</span> <span class="rwd-line">with <span class="csibold">CyberSafe Ireland</span> to learn how to communicate</span> about online safety.</p>
+                    </div>
+
+                </div>
+                
+<!--//////////////////////////ROW 2/////////////////////////////////-->
+
+                <div class="row endpagehome backgroundblobs2 bottomblobrowheight contenthrspacing">
+                    
+                    <div class="col-xl-10 offset-xl-1 col-sm-12">
+                        <hr class="keyline">
+                    </div>
+
+                    <div class="col-xl-5 offset-xl-1 col-sm-12">
+                        <h3 class="footer footer1">Start the conversation today by taking part in our unique technology card game.</h3>
+                    </div>
+
+                    <div class="col-xl-3 offset-xl-2 col-sm-12">
+                        <a class="footer rightallign hoverplaytoday" href="play.html"><img id="arrow" class="arrowpadding" src="images/arrows.png" width="30px" height="30px"><span class="textarrowmove">Play today!</span></a>
+                    </div>
+
+                </div>
+
+            </div><!--Closing tag for website content-->
+            
+<!--Start of script for parallax-->
+            <script src="parallax.js"></script>
+
+            <script>
+                var ParallaxManager, ParallaxPart;
+
+                ParallaxPart = (function() {
+                    function ParallaxPart(el) {
+                        this.el = el;
+                        this.speed = parseFloat(this.el.getAttribute('data-parallax-speed'));
+                        this.maxScroll = parseInt(this.el.getAttribute('data-max-scroll'));
+                    }
+
+                    ParallaxPart.prototype.update = function(scrollY) {
+                        if (scrollY > this.maxScroll) {
+                            return;
+                        }
+                        var offset = -(scrollY * this.speed);
+                        this.setYTransform(offset);
+                    };
+
+                    ParallaxPart.prototype.setYTransform = function(val) {
+                        this.el.style.webkitTransform = "translate3d(0, " + val + "px, 0)";
+                        this.el.style.MozTransform = "translate3d(0, " + val + "px, 0)";
+                        this.el.style.OTransform = "translate3d(0, " + val + "px, 0)";
+                        this.el.style.transform = "translate3d(0, " + val + "px, 0)";
+                        this.el.style.msTransform = "translateY(" + val + "px)";
+                    };
+
+                    return ParallaxPart;
+
+                })();
+
+                ParallaxManager = (function() {
+                    ParallaxManager.prototype.parts = [];
+
+                    function ParallaxManager(elements) {
+                        if (Array.isArray(elements) && elements.length) {
+                            this.elements = elements;
+                        }
+                        if (typeof elements === 'object' && elements.item) {
+                            this.elements = Array.prototype.slice.call(elements);
+                        } else if (typeof elements === 'string') {
+                            this.elements = document.querySelectorAll(elements);
+                            if (this.elements.length === 0) {
+                                throw new Error("Parallax: No elements found");
+                            }
+                            this.elements = Array.prototype.slice.call(this.elements);
+                        } else {
+                            throw new Error("Parallax: Element variable is not a querySelector string, Array, or NodeList");
+                        }
+                        for (var i in this.elements) {
+                            this.parts.push(new ParallaxPart(this.elements[i]));
+                        }
+                        window.addEventListener("scroll", this.onScroll.bind(this));
+                    }
+
+                    ParallaxManager.prototype.onScroll = function() {
+                        window.requestAnimationFrame(this.scrollHandler.bind(this));
+                    };
+
+                    ParallaxManager.prototype.scrollHandler = function() {
+                        var scrollY = Math.max(window.pageYOffset, 0);
+                        for (var i in this.parts) {
+                            this.parts[i].update(scrollY);
+                        }
+                    };
+
+                    return ParallaxManager;
+
+                })();
+
+                new ParallaxManager('.parallax-layer');
+
+            </script>
+
+        </div><!--Closing tag for parallax row-->
+        
+<!--///////////////////////END OF PARALLAX//////////////////////////-->
+
+    </div><!--Closing tag for parent container-->
+
+    <!-- Optional JavaScript -->
+    <!--Interaction-->
+    <!--Don't delete because Bootstrap needs it to work but we don't need to know it or use it in our own code-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
