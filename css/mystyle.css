@@ -1200,8 +1200,6 @@ body {
         line-height: 38px;
         padding-left: 30px;
         padding-top: 20px;
-
-
     }
 
     .heading2spacing {
@@ -1273,6 +1271,14 @@ body {
 
     .contenthrspacing2 {
         padding-top: 600px;
+    }
+
+    .topicslookmarginhr {
+        margin-top: -220px;
+    }
+
+    .topicslookmargin {
+        margin-top: -180px;
     }
 
     /*///////END OF MOBILE ATTRIBUTES AND SPACING//////*/
@@ -1521,141 +1527,159 @@ body {
 
     /* Child Text Container */
     /*div1*/
+
     .content_img div1 {
         position: absolute;
-        top: 7%;
-        right: 107%;
+        top: 0%;
+        right: 0%;
         color: #4c5160;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div1 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 20%;
     }
 
     /*div2*/
     .content_img div2 {
         position: absolute;
-        top: 7%;
-        right: 257%;
+        top: 0%;
+        right: 0%;
         color: #4c5160;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div2 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 20%;
     }
 
     /*div3*/
     .content_img div3 {
         position: absolute;
-        top: 7%;
-        right: 407%;
+        top: 0%;
+        right: 0%;
         color: #4c5160;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div3 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 20%;
     }
 
     /*div4*/
     .content_img div4 {
         position: absolute;
-        top: 7%;
-        right: 107%;
+        top: 0%;
+        right: 0%;
         color: #4c5160;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div4 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 20%;
     }
 
     /*div5*/
     .content_img div5 {
         position: absolute;
-        top: 7%;
-        right: 257%;
+        top: 0%;
+        right: 0%;
         color: #4c5160;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div5 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
-    }
-
-    /*div6*/
-    .content_img div6 {
-        position: absolute;
-        top: 7%;
-        right: 407%;
         color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
         font-size: 16px;
         line-height: 22px;
-        text-align: left;
+        padding: 20% 20% 20% 20%;
+    }
+
+    .content_img div6 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: visibility 0s, opacity 0.5s linear;
-        transition: visibility 0s, opacity 0.5s linear;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
     }
 
     .content_img:hover div6 {
         visibility: visible;
         opacity: 1;
-        width: 190px;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 20%;
     }
 
     /*div7*/
