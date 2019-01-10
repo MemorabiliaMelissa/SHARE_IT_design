@@ -1,6 +1,7 @@
 html,
 body {
     overflow-x: hidden;
+    overflow-x: auto;
 }
 
 /*/////////////////START OF NAV////////////////////*/
@@ -57,7 +58,7 @@ body {
 
 /*////////////START OF MOBILE NAV//////////////////*/
 
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 576px) {
     .overlay {
         overflow-y: auto;
     }
@@ -154,8 +155,8 @@ a.ex4:active {
 
 body {
     background: #fff8e8;
-    margin: 0;
-    padding-top: 80px;
+    /*   margin: 0;
+   padding-top: 80px;*/
 }
 
 /*Attributes of body, all pages.*/
@@ -216,8 +217,7 @@ body {
 /*All Heading 2.*/
 
 .pweb {
-    font-size;
-    16px;
+    font-size: 16px;
     letter-spacing: -2;
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;
@@ -327,10 +327,24 @@ body {
 
 /*Keyline spacing dark, topics page.*/
 
+.keylinedark1 {
+    border-top: .5px solid #4c5160;
+    margin-top: -50px;
+    width: 90%;
+}
+
+.keylinedark2 {
+    border-top: .5px solid #4c5160;
+    /*padding-bottom: 50px;*/
+    width: 90%;
+    margin-top: -50px;
+}
+
 .keylinedark {
     border-top: .5px solid #4c5160;
     padding-bottom: 5px;
     width: 100%;
+    margin-top: -50px;
 }
 
 /*Keyline dark, topics and play page.*/
@@ -342,6 +356,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     color: #4c5160;
+    margin-top: -50px;
 }
 
 /*All heading 3, topics and play pages.*/
@@ -353,7 +368,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     color: #4c5160;
-    padding-top: 35px;
+    /*    padding-top: 35px;*/
 }
 
 /*All heading 4, topics and play pages.*/
@@ -416,8 +431,7 @@ body {
 }
 
 .pweb2 {
-    font-size;
-    16px;
+    font-size: 16px;
     letter-spacing: -2;
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;
@@ -428,7 +442,7 @@ body {
 /*Dark paragraph attributes, play page.*/
 
 .pplay2 {
-    padding-top: 155px;
+    padding-top: 30px;
     padding-bottom: 85px;
 }
 
@@ -1154,7 +1168,7 @@ body {
     /*/////START OF MOBILE ATTRIBUTES AND SPACING//////*/
 
     .h2playtop {
-        padding-top: 0px;
+        margin-top: 5px;
         padding-bottom: 0px;
     }
 
@@ -1217,10 +1231,9 @@ body {
 
     .keyline {
         border-top: .5px solid #fff8e8;
-        /*padding-bottom: 10px;*/
+        /* padding-bottom: 10px;*/
         width: 85%;
-        margin-top: -40px;
-
+        margin-top: 5px;
     }
 
     .footer {
@@ -1239,28 +1252,32 @@ body {
 
     .keylinedark {
         border-top: .5px solid #4c5160;
-        padding-bottom: 10px;
-        width: 85%;
+        padding-bottom: 15px;
+        width: 90%;
+        margin-left: 30px;
     }
 
     .heading4 {
         font-size: 32px;
         line-height: 44px;
-        padding-left: 30px;
+        padding-left: 15px;
         /*   padding-top: 20px;*/
     }
 
     .pweb2 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     .footer3 {
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 32px;
+        line-height: 38px;
         padding-left: 30px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+
     }
 
     .phome {
@@ -1289,6 +1306,35 @@ body {
 
     .icon {
         padding-left: 30px;
+    }
+
+    .playextraheight {
+        height: 300px;
+        background-color: rgb(241, 186, 109); height: 200px;
+    }
+
+    .h2playbottom {
+        margin-top: -370px;
+        padding-bottom: 10px;
+    }
+
+    .h2playbottom2 {
+        margin-top: -140px;
+        padding-bottom: 10px;
+    }
+
+    .h1play {
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+
+    .cardtextheight {
+        padding-top: 470px;
+    }
+
+    .captionspacing {
+        padding-top: 0px;
+        padding-bottom: 100px;
     }
 
     /*///////END OF MOBILE ATTRIBUTES AND SPACING//////*/
@@ -1451,12 +1497,14 @@ body {
 
     }
 
+
     /*/////////////END OF MOBILE PARALLAX//////////////*/
 
     /*/////////////START OF MOBILE BLOBS///////////////*/
 
     .topblobrowheight {
         height: 287px;
+
     }
 
     .bottomblobrowheight {
@@ -1718,7 +1766,7 @@ body {
         font-weight: 800;
         font-size: 16px;
         line-height: 22px;
-        padding: 20% 20% 20% 50%;
+        padding: 20% 20% 20% 30%;
     }
 
     /*div8*/
@@ -1744,124 +1792,133 @@ body {
         font-weight: 800;
         font-size: 16px;
         line-height: 22px;
-        padding: 20% 20% 20% 20%;
+        padding: 20% 20% 20% 30%;
     }
 
     /*div9*/
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    color: #4c5160;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s,
-    opacity 0s linear;
-    transition: visibility 0s,
-    opacity 0s linear;
-}
+    .content_img div9 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
 
-.content_img:hover div9 {
-    visibility: visible;
-    opacity: 1;
-    color: #4c5160;
-    background-color: #f4ecdc;
-    height: 300px;
-    width: 100%;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 20% 20% 20% 20%;
-}
+    .content_img:hover div9 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
 
-/*div10*/
-.content_img div10 {
-    position: absolute;
-    top: 7%;
-    right: 107%;
-    color: #4c5160;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;
-    transition: visibility 0s, opacity 0.5s linear;
-}
+    /*div10*/
+    .content_img div10 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
 
-.content_img:hover div10 {
-    visibility: visible;
-    opacity: 1;
-    width: 190px;
-}
+    .content_img:hover div10 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
 
-/*div11*/
-.content_img div11 {
-    position: absolute;
-    top: 7%;
-    right: 257%;
-    color: #4c5160;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;
-    transition: visibility 0s, opacity 0.5s linear;
-}
+    /*div11*/
+    .content_img div11 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
 
-.content_img:hover div11 {
-    visibility: visible;
-    opacity: 1;
-    width: 190px;
-}
+    .content_img:hover div11 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
 
-/*div12*/
-.content_img div12 {
-    position: absolute;
-    top: 7%;
-    right: 407%;
-    color: #4c5160;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;
-    transition: visibility 0s, opacity 0.5s linear;
-}
+    /*div12*/
+    .content_img div12 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
 
-.content_img:hover div12 {
-    visibility: visible;
-    opacity: 1;
-    width: 190px;
-}
+    .content_img:hover div12 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 300px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
 
-/*//////////END OF TEXT MOBILE HOVER///////////////*/
+    /*//////////END OF TEXT MOBILE HOVER///////////////*/
 
-/*////////////START OF MOBILE CARDS////////////////*/
+    /*////////////START OF MOBILE CARDS////////////////*/
 
-.cardcentered {
-    margin-left: 25%;
-}
+    .cardcentered {
+        margin-left: 10%;
+    }
 
-.cardminusmargin {
-    margin-left: 0px;
-}
+    .cardminusmargin {
+        margin-left: 0px;
+    }
 
-.cardspacing {
-    margin-left: 0px;
-}
+    .cardspacing {
+        margin-left: 0px;
+    }
 
-/* Card spacing.*/
 
-/*//////////////END OF MOBILE CARDS////////////////*/
+    /* Card spacing.*/
+
+    /*//////////////END OF MOBILE CARDS////////////////*/
 
 }
 

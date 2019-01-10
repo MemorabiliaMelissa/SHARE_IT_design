@@ -3,50 +3,57 @@
 <!--////////////BOOTSTRAP STARTER TEMPLATE//////////////////////////-->
 
 <!--This tag is needed, it tells the browser, Google Chrome, that the page is a html page.-->
-<html lang="en"><!--html is the tag, 'lang' is an attribute of that tag, pay attention to the closing tag.-->
+<html lang="en">
+<!--html is the tag, 'lang' is an attribute of that tag, pay attention to the closing tag.-->
 
-<head><!--The head is the brain. We can't see anything on our web page in here.-->
+<head>
+    <!--The head is the brain. We can't see anything on our web page in here.-->
 
-<!-- Required meta tags-->
-<!--Sometimes some characters are not recognised, e.g., " € $, 'utf-8' is a set of characters we will need.-->
+    <!-- Required meta tags-->
+    <!--Sometimes some characters are not recognised, e.g., " € $, 'utf-8' is a set of characters we will need.-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--This line renders the page content as good as possible on any device, resolution.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--This line renders the page content as good as possible on any device, resolution.-->
 
-<!-- Bootstrap CSS-->
-<!--Here we are linking to the Bootstrap css style sheet-->
+    <!-- Bootstrap CSS-->
+    <!--Here we are linking to the Bootstrap css style sheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<!--Linking google font from css guidelines on website when you click plus on the font option, before my own style sheet-->
+    <!--Linking google font from css guidelines on website when you click plus on the font option, before my own style sheet-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,800|Open+Sans:400,800" rel="stylesheet">
-    
-<!--Here I will link my own css page, we load Bootstrap first and then ours, the order is important, components of Bootstrap but overide the generic styling with our own css sheet-->
+
+    <!--Here I will link my own css page, we load Bootstrap first and then ours, the order is important, components of Bootstrap but overide the generic styling with our own css sheet-->
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
-    <title>#SHAREIT.</title><!--Page title-->
-    
-</head><!--Closing head-->
+    <title>#SHAREIT.</title>
+    <!--Page title-->
 
-<body><!--Everything we see on the web page sits in the body-->
+</head>
+<!--Closing head-->
 
-<!--Parent container-->
-    <div class="container-fluid px-0">
+<body>
+    <!--Everything we see on the web page sits in the body-->
 
-<!--//////////////////////START OF NAV/////////////////////////////-->
+    <!--Parent container-->
+    <div class="container-fluid">
+
+        <!--//////////////////////START OF NAV/////////////////////////////-->
 
         <div class="row header fixed-top">
 
-<!--This row is for the header. Navigation detail will be displayed here.-->
+            <!--This row is for the header. Navigation detail will be displayed here.-->
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn h1home" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="index.html" class="heading2 h1home ex3">#SHAREIT.</a>
-                        <a href="topics.html" class="heading2 h1home ex3">Topics</a>
-                        <a href="play.html" class="heading2 h1home ex3">Play</a>
-                        <a href="https://cybersafeireland.org/" class="heading2 h1home ex3">Find out more?</a>
-                    </div>
-            </div><!--This code above is for the opening and closing of the hamburger icon.-->
+                <div class="overlay-content">
+                    <a href="index.html" class="heading2 h1home ex3">#SHAREIT.</a>
+                    <a href="topics.html" class="heading2 h1home ex3">Topics</a>
+                    <a href="play.html" class="heading2 h1home ex3">Play</a>
+                    <a href="https://cybersafeireland.org/" class="heading2 h1home ex3">Find out more?</a>
+                </div>
+            </div>
+            <!--This code above is for the opening and closing of the hamburger icon.-->
 
-<!--Start of responsive nav, headings.-->
+            <!--Start of responsive nav, headings.-->
             <div class="col-1 paddingtop marginleft">
                 <a href="index.html" class="neutral1 bold navwebfont ex3"><span class="accentyellow">#</span>SHAREIT<span class="accentyellow">.</span></a>
             </div>
@@ -62,7 +69,7 @@
                 <div class="col-xl-1 offset-xl-1 col-sm-1 offset-sm-1 paddingtop marginleft"> <a href="play.html" class="navwebfont neutral1 bold topics block ex3">Play</a></div>
 
             </span>
-            
+
             <span class="d-none d-sm-block ">
 
                 <div class="col-12 paddingtop marginleft">
@@ -70,16 +77,17 @@
                         <a href="https://cybersafeireland.org/" class="accentyellow bold navwebfont2 ex4">Find out more?</a> </span>
                 </div>
 
-            </span><!--End of responsive nav, headings.-->
+            </span>
+            <!--End of responsive nav, headings.-->
 
-<!--Start of the hamburger icon.-->
+            <!--Start of the hamburger icon.-->
             <div class="col-1 offset-8">
 
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menupadding d-xl-none"><img src="images/hamburgermenu.svg" width="24px"></span>
 
             </div>
 
-<!--Below is the script for opening and closing the fullscreen nav.-->
+            <!--Below is the script for opening and closing the fullscreen nav.-->
             <script>
                 function openNav() {
                     document.getElementById("myNav").style.height = "100%";
@@ -93,9 +101,9 @@
 
         </div>
 
-<!--////////////////////////////END OF NAV//////////////////////////-->
+        <!--////////////////////////////END OF NAV//////////////////////////-->
 
-<!--////////////////////////START OF PARALLAX////////////////////// -->
+        <!--////////////////////////START OF PARALLAX////////////////////// -->
 
         <div class="row rowheight">
 
@@ -121,48 +129,49 @@
 
             </div>
 
-<!--Website content attached to parallax.-->
-            <div class="contentplay content3 px-0 mx-0">
-                
-<!--//////////////////////////ROW 1/////////////////////////////////-->
+            <!--Website content attached to parallax.-->
+            <div class="contentplay content3">
+
+                <!--//////////////////////////ROW 1/////////////////////////////////-->
 
                 <div class="row backgroundblobs5 topblobrowheight">
 
-                        <div class="col-xl-4 offset-xl-1 col-sm-12">
-                            <h2 class="heading2 h2playtop">Step #1</h2>
-                            <hr class="keyline ">
-                            <p class="pweb"><span class="rwd-line">Choose an activity to take part in with your</span><span class="rwd-line"> child to play the cards from our suggested list</span> <span class="rwd-line">below. Choose a deck relating to a topic you</span> <span class="rwd-line">want to talk to your child about. Each deck has</span> <span class="rwd-line">a different card for communication, privacy</span> and screen time.
-                        </div>
+                    <div class="col-xl-4 offset-xl-1 col-sm-12">
+                        <h2 class="heading2 h2playtop">Step #1</h2>
+                        <hr class="keyline ">
+                        <p class="pweb"><span class="rwd-line">Choose an activity to take part in with your</span><span class="rwd-line"> child to play the cards from our suggested list</span> <span class="rwd-line">below. Choose a deck relating to a topic you</span> <span class="rwd-line">want to talk to your child about. Each deck has</span> <span class="rwd-line">a different card for communication, privacy</span> and screen time.
+                    </div>
 
-                        <div class="col-xl-4 offset-xl-2 col-sm-12">
-                            <h2 class="heading2 heading2spacing h2playtop">Step #2</h2>
-                            <hr class="keyline">
-                            <p class="pweb"><span class="rwd-line">Download the cards at the bottom of this</span> <span class="rwd-line">page or play online. Flip over the next card</span> <span class="rwd-line">for a clue! Explore with your child together</span> to find the clue.</p>
-                        </div>
+                    <div class="col-xl-4 offset-xl-2 col-sm-12">
+                        <h2 class="heading2 heading2spacing h2playtop">Step #2</h2>
+                        <hr class="keyline">
+                        <p class="pweb"><span class="rwd-line">Download the cards at the bottom of this</span> <span class="rwd-line">page or play online. Flip over the next card</span> <span class="rwd-line">for a clue! Explore with your child together</span> to find the clue.</p>
+                    </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 2/////////////////////////////////-->
+
+                <div class="row playextraheight"></div>
+
+                <!--//////////////////////////ROW 2/////////////////////////////////-->
 
                 <div class="row backgroundblobs6 bottomblobrowheight contentplayspacing">
 
-                        <div class="col-xl-4 offset-xl-1 col-sm-12">
-                            <h2 class="heading2 heading2spacing h2playbottom">Step #3</h2>
-                            <hr class="keyline">
-                            <p class="pweb"><span class="rwd-line">When your child finds the clue, ask the</span> <span class="rwd-line">question on the back of the card and discuss</span> <span class="rwd-line">it. Flip over the next card for another clue</span> <span class="rwd-line">and follow the same steps mentioned in</span> steps #1 and #2.</p>
-                        </div>
+                    <div class="col-xl-4 offset-xl-1 col-sm-12">
+                        <h2 class="heading2 heading2spacing h2playbottom">Step #3</h2>
+                        <hr class="keyline">
+                        <p class="pweb"><span class="rwd-line">When your child finds the clue, ask the</span> <span class="rwd-line">question on the back of the card and discuss</span> <span class="rwd-line">it. Flip over the next card for another clue</span> <span class="rwd-line">and follow the same steps mentioned in</span> steps #1 and #2.</p>
+                    </div>
 
-                        <div class="col-xl-4 offset-xl-2 col-sm-12">
-                            <h2 class="heading2 heading2spacing h2playbottom">Step #4</h2>
-                            <hr class="keyline">
-                            <p class="pweb pplay1"><span class="rwd-line">You can use these cards as conversation</span> <span class="rwd-line">starters to bring up a touchy subject.</span> <span class="rwd-line">Congratulations! You are now on the</span> way to communicate about Cyber Safety.</p>
-                        </div>
-
+                    <div class="col-xl-4 offset-xl-2 col-sm-12">
+                        <h2 class="heading2 heading2spacing h2playbottom2">Step #4</h2>
+                        <hr class="keyline">
+                        <p class="pweb pplay1"><span class="rwd-line">You can use these cards as conversation</span> <span class="rwd-line">starters to bring up a touchy subject.</span> <span class="rwd-line">Congratulations! You are now on the</span> way to communicate about Cyber Safety.</p>
+                    </div>
                 </div>
-                
-<!--//////////////////////////ROW 3/////////////////////////////////-->
 
-                <div class="row neutral3row">
+                <!--//////////////////////////ROW 3/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-4 offset-xl-1 col-sm-12">
                         <h1 class="heading2 inspectpad bottompagetextcolour">Inspect, connect <br>and protect.</h1>
@@ -173,98 +182,110 @@
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 4/////////////////////////////////-->
 
-                <div class="row neutral3row">
+                <!--//////////////////////////ROW 4/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-10 offset-xl-1 col-sm-12">
-                        <hr class="keylinedark">
+                        <hr class="keylinedark1">
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 5/////////////////////////////////-->
 
-                <div class="row neutral3row">
+                <!--//////////////////////////ROW 5/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h3 class="heading3">You could take part in...</h3>
+                        <h3 class="heading3">You could take <span class="rwd-block"> part in...</span></h3>
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 6/////////////////////////////////-->
-                
-                <div class="row neutral3row">
+
+                <!--//////////////////////////ROW 6/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-2 offset-xl-3 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Walking.png" width="160" height="250" class="hvr-float"><div7>Go for a walk, get some fresh air. Take a walk along the river, in the forest or browse the city. Spend some bonding time with your child instead your devices.</div7></h3>
+                        <h3 class="centered"><img src="images/Walking.png" width="160" height="250" class="hvr-float">
+                            <div7>Go for a walk, get some<span class="rwd-block"> fresh air. Take a walk</span><span class="rwd-block"> along the river, in the </span><span class="rwd-block"> forest or browse the</span><span class="rwd-block"> city. Spend some </span><span class="rwd-block">bonding time with your</span> child instead your devices.</div7>
+                        </h3>
                         <h3 class="heading4 centered">walking</h3>
                     </div>
 
                     <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Climbing.png" width="160" height="250" class="hvr-float"><div8>Climb a tree, hike a mountain, take on a <br>hill walk and adventure along the way. Get out <br>in the fresh air and experience something new together!</div8></h3>
+                        <h3 class="centered"><img src="images/Climbing.png" width="160" height="250" class="hvr-float">
+                            <div8>Climb a tree, hike a <span class="rwd-block"> mountain, take on a </span><span class="rwd-block">hill walk and adventure</span><span class="rwd-block"> along the way. Get out in</span><span class="rwd-block"> the fresh air and experience</span> something new together!</div8>
+                        </h3>
                         <h3 class="heading4 centered">climbing</h3>
                     </div>
 
                     <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Exploring.png" width="160" height="250" class="hvr-float"><div9>Exploring is a great bonding tool to get <br>out of your every day envrironment and get active together; creating quality time, being a team and discovering new things.</div9></h3>
+                        <h3 class="centered"><img src="images/Exploring.png" width="160" height="250" class="hvr-float">
+                            <div9>Exploring is a great bonding<span class="rwd-block">tool to get out of your every </span><span class="rwd-block">day envrironment and get</span><span class="rwd-block"> active together; creating</span><span class="rwd-block"> quality time, being a team</span> and discovering new things.</div9>
+                        </h3>
                         <h3 class="heading4 centered">exploring</h3>
                     </div>
 
                 </div>
 
-<!--//////////////////////////ROW 7/////////////////////////////////-->
-                
-                <div class="row neutral3row">
+                <!--//////////////////////////ROW 7/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-2 offset-xl-3 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Sight_Seeing.png" width="160" height="250" class="hvr-float"><div10>Take the opportunity <br>to make a family day and do or see the things on that unfinished to do list while spending time with your child and ensuring they're being safe online at the same time.</div10></h3>
+                        <h3 class="centered icon"><img src="images/Sight_Seeing.png" width="160" height="250" class="hvr-float">
+                            <div10>Take the opportunity to <span class="rwd-block">make a family day and do </span><span class="rwd-block"> or see the things on that</span><span class="rwd-block"> unfinished to do list while</span><span class="rwd-block"> spending time with your</span><span class="rwd-block"> child and ensuring they're</span><span class="rwd-block"> being safe online at the</span> same time.</div10>
+                        </h3>
                         <h3 class="heading4 centered">sight-seeing</h3>
                     </div>
 
                     <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Arts_and_Crafts.png" width="160" height="250" class="hvr-float"><div11>Creating together is <br>the perfect opporunity to build a bond with your child and create trust, an easy way to start the conversation <br>by making and doing together.</div11></h3>
+                        <h3 class="centered icon"><img src="images/Arts_and_Crafts.png" width="160" height="250" class="hvr-float">
+                            <div11>Creating together is the<span class="rwd-block"> perfect opporunity to build</span><span class="rwd-block"> a bond with your child and</span><span class="rwd-block"> create trust, an easy way to</span><span class="rwd-block"> start the conversation by</span> making and doing together.</div11>
+                        </h3>
                         <h3 class="heading4 centered">arts and crafts</h3>
                     </div>
 
                     <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Building.png" width="160" height="250" class="hvr-float"><div12>Similar to arts and crafts, building things while building a bond. Doing simple activities together creates trust and leads to naturally more open conversation.</div12></h3>
+                        <h3 class="centered icon"><img src="images/Building.png" width="160" height="250" class="hvr-float">
+                            <div12>Similar to arts and crafts,<span class="rwd-block"> building things while</span><span class="rwd-block"> building a bond. Doing </span><span class="rwd-block">simple activities together</span><span class="rwd-block"> creates trust and leads </span><span class="rwd-block"> to naturally more </span>open conversation.</div12>
+                        </h3>
                         <h3 class="heading4 centered">building</h3>
                     </div>
 
                 </div>
 
-<!--//////////////////////////ROW 8/////////////////////////////////-->
+                <!--//////////////////////////ROW 8/////////////////////////////////-->
 
-                <div class="row neutral3row">
+                <div class="row neutral2row">
 
                     <div class="col-xl-4 offset-xl-1 col-sm-12">
                         <h1 class="heading2 bottompagetextcolour h1play">Choose a deck, <br>create a bond, <br>start a conversation</h1>
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 9/////////////////////////////////-->
 
-                <div class="row neutral3row">
+                <!--//////////////////////////ROW 9/////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-10 offset-xl-1 col-sm-12">
-                        <hr class="keylinedark">
+                        <hr class="keylinedark2">
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 10////////////////////////////////-->
-                
-<!--/////////////////////START OF CARDS/////////////////////////////-->
 
-                <div class="row cardrowheight">
+                <!--//////////////////////////ROW 10////////////////////////////////-->
 
-<!--//////////////////COMMUNICATION CARD SECTION////////////////////-->
+                <!--/////////////////////START OF CARDS/////////////////////////////-->
 
-                    <div class="col-xl-3 offset-xl-1 col-sm-12 card-container">
+                <div class="row neutral2row">
+
+                    <!--//////////////////COMMUNICATION CARD SECTION////////////////////-->
+
+                    <div class="col-xl-3 offset-xl-1 col-sm-12">
 
                         <div class="flip-container cardcentered" ontouchstart="this.classList.toggle('hover')">
 
@@ -311,12 +332,14 @@
                             </div>
 
                         </div>
-                       
-                        <h3 class="heading4 centered captionspacing">Communication </h3>
+
+                        <div class="cardtextheight">
+                            <h3 class="heading4 centered captionspacing">Communication </h3>
+                        </div>
 
                     </div>
-                    
-<!--//////////////////PRIVACY CARD SECTION//////////////////////////-->
+
+                    <!--//////////////////PRIVACY CARD SECTION//////////////////////////-->
 
                     <div class="col-xl-3 offset-1 col-sm-12 card-container cardspacing">
 
@@ -325,7 +348,7 @@
                             <div class="flipper">
 
                                 <div class="back">
-                                    
+
                                     <div class="row">
 
                                         <div id="carouselexample2" class="carousel slide cardmargin" data-ride="carousel">
@@ -355,7 +378,7 @@
                                 </div>
 
                                 <div class="front">
-                                    
+
                                     <div>
                                         <img src="images/cardscover2.png" height="450px">
 
@@ -365,12 +388,15 @@
                             </div>
 
                         </div>
-                        
-                        <h3 class="heading4 centered captionspacing">Privacy</h3>
+
+
+                        <div class="cardtextheight">
+                            <h3 class="heading4 centered captionspacing">Privacy</h3>
+                        </div>
 
                     </div>
-                
- <!--///////////////SCREEN TIME CARD SECTION////////////////////////-->
+
+                    <!--///////////////SCREEN TIME CARD SECTION////////////////////////-->
 
                     <div class="col-xl-3 offset-1 col-sm-12 card-container cardspacing">
 
@@ -379,7 +405,7 @@
                             <div class="flipper">
 
                                 <div class="back">
-                                    
+
                                     <div class="row">
 
                                         <div id="carouselexample3" class="carousel slide cardmargin" data-ride="carousel">
@@ -419,28 +445,31 @@
                             </div>
 
                         </div>
-                        
-                        <h3 class="heading4 centered captionspacing">Screen Time</h3>
+
+                        <div class="cardtextheight">
+                            <h3 class="heading4 centered captionspacing">Screen Time</h3>
+                        </div>
 
                     </div>
-                                        
-                </div><!--This div closes the row containtaining the 3 cards-->
 
-<!--/////////////////////END OF CARDS/////////////////////////////-->
-                
-<!--//////////////////////////ROW 11////////////////////////////////-->
+                </div>
+                <!--This div closes the row containtaining the 3 cards-->
 
-                <div class="row neutral3row">
+                <!--/////////////////////END OF CARDS/////////////////////////////-->
+
+                <!--//////////////////////////ROW 11////////////////////////////////-->
+
+                <div class="row neutral2row">
 
                     <div class="col-xl-10 offset-xl-1 col-sm-12">
                         <hr class="keylinedark">
                     </div>
 
                 </div>
-                
-<!--//////////////////////////ROW 12////////////////////////////////-->
 
-                <div class="row neutral3row endpageplay">
+                <!--//////////////////////////ROW 12////////////////////////////////-->
+
+                <div class="row neutral2row endpageplay">
 
                     <div class="col-xl-5 offset-xl-1 col-sm-12">
                         <h3 class="footer footer3">Try our online version <br>or download our PDF.</h3>
@@ -452,11 +481,12 @@
 
                 </div>
 
-        </div><!--Closing tag for website content-->
+            </div>
+            <!--Closing tag for website content-->
 
-<!--Start of script for parallax-->
-            <script src="parallax.js"></script>
-            
+            <!--Start of script for parallax-->
+
+
             <script>
                 var ParallaxManager, ParallaxPart;
 
@@ -529,12 +559,14 @@
                 new ParallaxManager('.parallax-layer');
 
             </script>
-            
-        </div><!--Closing tag for parallax row-->
-        
-<!--///////////////////////END OF PARALLAX//////////////////////////-->
-    
-    </div><!--Closing tag for parent container-->
+
+        </div>
+        <!--Closing tag for parallax row-->
+
+        <!--///////////////////////END OF PARALLAX//////////////////////////-->
+
+    </div>
+    <!--Closing tag for parent container-->
 
     <!-- Optional JavaScript -->
     <!--Interaction-->
