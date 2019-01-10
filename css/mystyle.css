@@ -1169,7 +1169,7 @@ body {
     }
 
     .contenthrspacing {
-        padding-top: 340px;
+        padding-top: 120px;
     }
 
     .rightallign {
@@ -1181,23 +1181,23 @@ body {
     }
 
     .heading1 {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 36px;
         padding-left: 30px;
         padding-top: 120px;
     }
 
     .title {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 30px;
         padding-left: 30px;
         text-align: left;
-        margin-top: -140px;
+        margin-top: -150px;
     }
 
     .heading2 {
-        font-size: 48px;
-        line-height: 54px;
+        font-size: 32px;
+        line-height: 38px;
         padding-left: 30px;
         padding-top: 60px;
     }
@@ -1207,8 +1207,8 @@ body {
     }
 
     .pweb {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 12px;
+        line-height: 20px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -1220,10 +1220,10 @@ body {
     }
 
     .footer {
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 20px;
+        line-height: 30px;
         padding-left: 30px;
-        margin-top: -20px;
+        margin-top: -170px;
     }
 
     .heading3 {
@@ -1260,7 +1260,7 @@ body {
     }
 
     .phome {
-        padding-top: 85px;
+        padding-top: 25px;
     }
 
     .ptopic {
@@ -1277,6 +1277,10 @@ body {
 
     .rwd-line {
         display: inline;
+    }
+
+    .rwd-block {
+        display: block;
     }
 
     /*//////////END OF MOBILE LINE BREAKS//////////////*/
