@@ -1181,8 +1181,8 @@ body {
     }
 
     .heading1 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 32px;
+        line-height: 38px;
         padding-left: 30px;
         padding-top: 120px;
     }
@@ -1200,6 +1200,8 @@ body {
         line-height: 38px;
         padding-left: 30px;
         padding-top: 60px;
+
+
     }
 
     .heading2spacing {
@@ -1207,8 +1209,8 @@ body {
     }
 
     .pweb {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -1220,10 +1222,15 @@ body {
     }
 
     .footer {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 32px;
+        line-height: 38px;
         padding-left: 30px;
-        margin-top: -170px;
+        margin-top: -120px;
+    }
+
+    .playmargin {
+
+        margin-top: -160px;
     }
 
     .heading3 {
