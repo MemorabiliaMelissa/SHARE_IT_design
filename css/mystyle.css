@@ -1,581 +1,1931 @@
-<!doctype html>
+html,
+body {
+    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+/*/////////////////START OF NAV////////////////////*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: #4c5160;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    /*  margin-top: 30px;*/
+
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff8e8;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 22px;
+    font-size: 40px;
+    margin-top: -10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+
+
+}
+
+/*This is the end of the code for the dropdown fullscreen menu.*/
+
+/*////////////START OF MOBILE NAV//////////////////*/
+
+@media screen and (max-height: 576px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 48px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*//////////////END OF MOBILE NAV//////////////////*/
+
+/*Below is the hover colour change for home page, turquoise. Use this for 'index.html'.*/
+a.ex1:hover,
+a.ex1:active {
+    color: #51abb7;
+    text-decoration: none;
+}
+
+/*Below is the hover colour change for home page, orange. Use this for 'topics.html'.*/
+a.ex2:hover,
+a.ex2:active {
+    color: #ea8f55;
+    text-decoration: none;
+}
+
+/*Below is the hover colour change for home page, yellow. Use this for 'play.html'.*/
+a.ex3:hover,
+a.ex3:active {
+    color: #efb25d;
+    color: #efb25d;
+    text-decoration: none;
+}
+
+/*Below is the hover colour change for home page, yellow. Use this for 'play.html'.*/
+a.ex4:hover,
+a.ex4:active {
+    color: #fff8e8;
+    text-decoration: none;
+}
 
-<!--////////////BOOTSTRAP STARTER TEMPLATE//////////////////////////-->
+.header {
+    background-color: #4c5160;
+    height: 80px;
+}
 
-<!--This tag is needed, it tells the browser, Google Chrome, that the page is a html page.-->
-<html lang="en">
-<!--html is the tag, 'lang' is an attribute of that tag, pay attention to the closing tag.-->
+/*Header in nav.*/
+
+.navwebfont {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #fff8e8;
+}
+
+/*Type attributes for responsive nav, all pages.*/
+
+.navwebfont2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+/*Type attributes for 'Find out more?', all pages.*/
+
+.paddingtop {
+    padding-top: 25px;
+}
 
-<head>
-    <!--The head is the brain. We can't see anything on our web page in here.-->
+/*Padding for nav, all pages.*/
+
+.marginleft {
+    margin-left: 30px;
+}
 
-    <!-- Required meta tags-->
-    <!--Sometimes some characters are not recognised, e.g., " € $, 'utf-8' is a set of characters we will need.-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--This line renders the page content as good as possible on any device, resolution.-->
+/*Margin for nav, all pages.*/
 
-    <!-- Bootstrap CSS-->
-    <!--Here we are linking to the Bootstrap css style sheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+.menupadding {
+    line-height: 70px;
+}
 
-    <!--Linking google font from css guidelines on website when you click plus on the font option, before my own style sheet-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800|Open+Sans:400,800" rel="stylesheet">
+/*Padding for hamburger icon.*/
 
-    <!--Here I will link my own css page, we load Bootstrap first and then ours, the order is important, components of Bootstrap but overide the generic styling with our own css sheet-->
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+/*///////////////////END OF NAV////////////////////*/
 
-    <title>#SHAREIT.</title>
-    <!--Page title-->
+/*///////START OF ATTRIBUTES AND SPACING///////////*/
 
-</head>
-<!--Closing head-->
+body {
+    background: #fff8e8;
+    /*   margin: 0;
+   padding-top: 80px;*/
+}
 
-<body>
-    <!--Everything we see on the web page sits in the body-->
+/*Attributes of body, all pages.*/
 
-    <!--Parent container-->
-    <div class="container-fluid">
+/*/////////////////FIRST PAGE//////////////////////*/
 
-        <!--//////////////////////START OF NAV/////////////////////////////-->
+.accentturquoise {
+    color: #51abb7;
+}
 
-        <div class="row header fixed-top">
+/*Colour, index page.*/
+
+.heading1 {
+    font-size: 56px;
+    letter-spacing: -2;
+    line-height: 62px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #4c5160;
+}
 
-            <!--This row is for the header. Navigation detail will be displayed here.-->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn h1home" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="index.html" class="heading2 h1home ex3">#SHAREIT.</a>
-                    <a href="topics.html" class="heading2 h1home ex3">Topics</a>
-                    <a href="play.html" class="heading2 h1home ex3">Play</a>
-                    <a href="https://cybersafeireland.org/" class="heading2 h1home ex3">Find out more?</a>
-                </div>
-            </div>
-            <!--This code above is for the opening and closing of the hamburger icon.-->
+/*All heading 1.*/
 
-            <!--Start of responsive nav, headings.-->
-            <div class="col-1 paddingtop marginleft">
-                <a href="index.html" class="neutral1 bold navwebfont ex3"><span class="accentyellow">#</span>SHAREIT<span class="accentyellow">.</span></a>
-            </div>
+.toppagepadding {
+    padding-top: 20px;
+}
 
-            <span class="d-none d-sm-block">
+/*Top page padding, all pages.*/
 
-                <div class="col-xl-1 offset-xl-1 col-sm-2 offset-sm-2 paddingtop marginleft"> <a href="topics.html" class="navwebfont neutral1 bold topics block ex3">Topics</a></div>
+.toppagepaddingtitle {
+    padding-top: 20px;
+}
 
-            </span>
+/*Padding top, index page.*/
 
-            <span class="d-none d-sm-block">
+.title {
+    font-size: 40px;
+    letter-spacing: -2;
+    line-height: 46px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #4c5160;
+    text-align: right;
+}
 
-                <div class="col-xl-1 offset-xl-1 col-sm-1 offset-sm-1 paddingtop marginleft"> <a href="play.html" class="navwebfont neutral1 bold topics block ex3">Play</a></div>
+/*Title, index page.*/
 
-            </span>
+.heading2 {
+    font-size: 40px;
+    letter-spacing: -2;
+    line-height: 46px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #fff8e8;
+    padding-top: 75px;
+}
 
-            <span class="d-none d-sm-block ">
+/*All Heading 2.*/
 
-                <div class="col-12 paddingtop marginleft">
-                    <span>
-                        <a href="https://cybersafeireland.org/" class="accentyellow bold navwebfont2 ex4">Find out more?</a> </span>
-                </div>
+.pweb {
+    font-size: 16px;
+    letter-spacing: -2;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff8e8;
+}
 
-            </span>
-            <!--End of responsive nav, headings.-->
+/*Paragraphs, all pages.*/
 
-            <!--Start of the hamburger icon.-->
-            <div class="col-1 offset-8">
+.csibold {
+    font-weight: 800;
+}
 
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menupadding d-xl-none"><img src="images/hamburgermenupng.png" width="24px"></span>
+/*Bold text in paragraph, on index page.*/
 
-            </div>
+.phome {
+    padding-top: 75px;
+}
 
-            <!--Below is the script for opening and closing the fullscreen nav.-->
-            <script>
-                function openNav() {
-                    document.getElementById("myNav").style.height = "100%";
-                }
+/*Padding for paragraph, index page.*/
 
-                function closeNav() {
-                    document.getElementById("myNav").style.height = "0%";
-                }
+.contenthrspacing {
+    padding-top: 60px;
+}
 
-            </script>
+/*Spacing for keyline, index page.*/
 
-        </div>
+.keyline {
+    border-top: .5px solid #fff8e8;
+    padding-bottom: 5px;
+    width: 100%;
+}
 
-        <!--////////////////////////////END OF NAV//////////////////////////-->
+/*Keyline attributes light, all pages.*/
 
-        <!--////////////////////////START OF PARALLAX////////////////////// -->
+.hoverplaytoday:hover {
+    color: #4c5160;
+    text-decoration: none;
+}
 
-        <div class="row rowheight">
+/*Hover on play button, index page.*/
 
-            <div class="parallax-container">
+.footer {
+    font-size: 40px;
+    letter-spacing: -2;
+    line-height: 46px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #fff8e8;
+}
 
-                <div class="parallax-layer layer-12" data-parallax-speed="0.3" data-max-scroll="565"></div>
+/*Footer attributes, index and topics pages.*/
 
-                <div class="parallax-layer layer-13" data-parallax-speed=".5" data-max-scroll="565"></div>
+.rightallign {
+    text-align: right;
+}
 
-                <div class="parallax-layer layer-14" data-parallax-speed="1" data-max-scroll="565"></div>
+/*Right allign text on footers, index and play pages.*/
 
-                <div class="parallax-layer layer-15" data-parallax-speed=".3" data-max-scroll="565"></div>
+.endpagehome {
+    padding-bottom: 130px;
+}
 
-                <div class="row scene1background homepage parallax-layer layer-6">
+/*Spacing on index page.*/
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
+/*/////////////////SECOND PAGE/////////////////////*/
 
-                        <h1 class="heading1 toppagepadding"> Play Today<span class="accentyellow">!</span></h1>
+.accentorange {
+    color: #ea8f55;
+}
 
-                    </div>
+/*Colour, topics page.*/
 
-                </div>
+.ptopic {
+    padding-top: 75px;
+}
 
-            </div>
+/*Paragraph spacing, topics page.*/
 
-            <!--Website content attached to parallax.-->
-            <div class="contentplay content3">
+.contenthrspacing2 {
+    padding-top: 200px;
+}
 
-                <!--//////////////////////////ROW 1/////////////////////////////////-->
+/*Keyline spacing, topics page.*/
 
-                <div class="row backgroundblobs5 topblobrowheight">
+.footer2 {
+    padding-bottom: 140px;
+}
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h2 class="heading2 h2playtop">Step #1</h2>
-                        <hr class="keyline ">
-                        <p class="pweb"><span class="rwd-line">Choose an activity to take part in with your</span><span class="rwd-line"> child to play the cards from our suggested list</span> <span class="rwd-line">below. Choose a deck relating to a topic you</span> <span class="rwd-line">want to talk to your child about. Each deck has</span> <span class="rwd-line">a different card for communication, privacy</span> and screen time.
-                    </div>
+/*Footer spacing, topics page.*/
 
-                    <div class="col-xl-4 offset-xl-2 col-sm-12">
-                        <h2 class="heading2 heading2spacing h2playtop">Step #2</h2>
-                        <hr class="keyline">
-                        <p class="pweb"><span class="rwd-line">Download the cards at the bottom of this</span> <span class="rwd-line">page or play online. Flip over the next card</span> <span class="rwd-line">for a clue! Explore with your child together</span> to find the clue.</p>
-                    </div>
+.neutral2row {
+    background-color: #f4ecdc;
+}
 
-                </div>
+/*Background colour, topics page.*/
 
-                <div class="row playextraheight"></div>
+.bottompagetextcolour {
+    color: #4c5160;
+}
 
-                <!--//////////////////////////ROW 2/////////////////////////////////-->
+/*Dark type, topics and play page.*/
 
-                <div class="row backgroundblobs6 bottomblobrowheight contentplayspacing">
+.contenthrspacing3 {
+    padding-top: 50px;
+}
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h2 class="heading2 heading2spacing h2playbottom">Step #3</h2>
-                        <hr class="keyline">
-                        <p class="pweb"><span class="rwd-line">When your child finds the clue, ask the</span> <span class="rwd-line">question on the back of the card and discuss</span> <span class="rwd-line">it. Flip over the next card for another clue</span> <span class="rwd-line">and follow the same steps mentioned in</span> steps #1 and #2.</p>
-                    </div>
+/*Keyline spacing dark, topics page.*/
 
-                    <div class="col-xl-4 offset-xl-2 col-sm-12">
-                        <h2 class="heading2 heading2spacing h2playbottom2">Step #4</h2>
-                        <hr class="keyline">
-                        <p class="pweb pplay1"><span class="rwd-line">You can use these cards as conversation</span> <span class="rwd-line">starters to bring up a touchy subject.</span> <span class="rwd-line">Congratulations! You are now on the</span> way to communicate about Cyber Safety.</p>
-                    </div>
-                </div>
+.keylinedark1 {
+    border-top: .5px solid #4c5160;
+    margin-top: -50px;
+    width: 90%;
+}
 
-                <!--//////////////////////////ROW 3/////////////////////////////////-->
+.keylinedark2 {
+    border-top: .5px solid #4c5160;
+    /*padding-bottom: 50px;*/
+    width: 90%;
+    margin-top: -50px;
+}
 
-                <div class="row neutral2row">
+.keylinedark {
+    border-top: .5px solid #4c5160;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: -50px;
+}
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h1 class="heading2 inspectpad bottompagetextcolour">Inspect, connect <br>and protect.</h1>
-                    </div>
+/*Keyline dark, topics and play page.*/
 
-                    <div class="col-xl-5 offset-xl-1 col-sm-12">
-                        <p class="pweb2 pplay2">Take part in these activities to create bonding time with your child. This will aid in the creation of a subconscious connection and open relationship! Connection and bonding are the key to communicating and understanding your child. These activities that we suggest are free, fun for you and your child and will create a experience outside of your normal everyday life and away from technology, which will lead to a more open relationship.</p>
-                    </div>
+.heading3 {
+    font-size: 32px;
+    letter-spacing: -2;
+    line-height: 44px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #4c5160;
+    /* margin-top: -50px;*/
+}
 
-                </div>
+/*All heading 3, topics and play pages.*/
 
-                <!--//////////////////////////ROW 4/////////////////////////////////-->
+.heading4 {
+    font-size: 24px;
+    letter-spacing: -2;
+    line-height: 33px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #4c5160;
+    /*    padding-top: 35px;*/
+}
 
-                <div class="row neutral2row">
+.2maintips {
+    margin-left: 30px;
+}
 
-                    <div class="col-xl-10 offset-xl-1 col-sm-12">
-                        <hr class="keylinedark1">
-                    </div>
+/*All heading 4, topics and play pages.*/
 
-                </div>
+.centered {
+    text-align: center;
+    margin-left: -15px;
+}
 
-                <!--//////////////////////////ROW 5/////////////////////////////////-->
+/*Icon spacing, topics and play pages.*/
 
-                <div class="row neutral2row">
+.h1topic2 {
+    padding-top: 125px;
+}
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h3 class="heading3">You could take<br> part in...</h3>
-                    </div>
+/*Topic tips spacing, topics page.*/
 
-                </div>
+.endpagetopic {
+    padding-bottom: 165px;
+}
 
-                <!--//////////////////////////ROW 6/////////////////////////////////-->
+/*End page spacing, topics page.*/
 
-                <div class="row neutral2row">
+/*/////////////////THIRD PAGE//////////////////////*/
 
-                    <div class="col-xl-2 offset-xl-3 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Walking.png" width="160" height="250" class="hvr-float">
-                            <div7>Go for a walk, get some<span class="rwd-line"> fresh air. Take a walk</span><span class="rwd-line"> along the river, in the </span><span class="rwd-line"> forest or browse the</span><span class="rwd-line"> city. Spend some </span><span class="rwd-line">bonding time with your</span> child instead your devices.</div7>
-                        </h3>
-                        <h3 class="heading4 centered">walking</h3>
-                    </div>
+.accentyellow {
+    color: #efb25d;
+}
 
-                    <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Climbing.png" width="160" height="250" class="hvr-float">
-                            <div8>Climb a tree, hike a <span class="rwd-line"> mountain, take on a </span><span class="rwd-block">hill walk and adventure</span><span class="rwd-line"> along the way. Get out in</span><span class="rwd-line"> the fresh air and experience</span> something new together!</div8>
-                        </h3>
-                        <h3 class="heading4 centered">climbing</h3>
-                    </div>
+/*Colour, play page.*/
 
-                    <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered"><img src="images/Exploring.png" width="160" height="250" class="hvr-float">
-                            <div9>Exploring is a great bonding<span class="rwd-line">tool to get out of your every </span><span class="rwd-line">day envrironment and get</span><span class="rwd-line"> active together; creating</span><span class="rwd-line"> quality time, being a team</span> and discovering new things.</div9>
-                        </h3>
-                        <h3 class="heading4 centered">exploring</h3>
-                    </div>
+.h2playtop {
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
 
-                </div>
+/*Page spacing, play page.*/
 
-                <!--//////////////////////////ROW 7/////////////////////////////////-->
+.h2playbottom {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
 
-                <div class="row neutral2row">
+/*Page spacing, play page.*/
 
-                    <div class="col-xl-2 offset-xl-3 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Sight_Seeing.png" width="160" height="250" class="hvr-float">
-                            <div10>Take the opportunity to <span class="rwd-line">make a family day and do </span><span class="rwd-line"> or see the things on that</span><span class="rwd-line"> unfinished to do list while</span><span class="rwd-line"> spending time with your</span><span class="rwd-line"> child and ensuring they're</span><span class="rwd-line"> being safe online at the</span> same time.</div10>
-                        </h3>
-                        <h3 class="heading4 centered">sight-seeing</h3>
-                    </div>
+.pplay1 {
+    padding-bottom: 97px;
+}
 
-                    <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Arts_and_Crafts.png" width="160" height="250" class="hvr-float">
-                            <div11>Creating together is the<span class="rwd-line"> perfect opporunity to build</span><span class="rwd-line"> a bond with your child and</span><span class="rwd-line"> create trust, an easy way to</span><span class="rwd-line"> start the conversation by</span> making and doing together.</div11>
-                        </h3>
-                        <h3 class="heading4 centered">arts and crafts</h3>
-                    </div>
+/*Paragraph spacing, play page.*/
 
-                    <div class="col-xl-2 offset-xl-1 col-sm-12 content_img">
-                        <h3 class="centered icon"><img src="images/Building.png" width="160" height="250" class="hvr-float">
-                            <div12>Similar to arts and crafts,<span class="rwd-line"> building things while</span><span class="rwd-line"> building a bond. Doing </span><span class="rwd-line">simple activities together</span><span class="rwd-block"> creates trust and leads </span><span class="rwd-line"> to naturally more </span>open conversation.</div12>
-                        </h3>
-                        <h3 class="heading4 centered">building</h3>
-                    </div>
+.neutral3row {
+    background-color: #f3e6d2;
+}
 
-                </div>
+/*Row colour, play page.*/
 
-                <!--//////////////////////////ROW 8/////////////////////////////////-->
+.inspectpad {
+    padding-top: 150px;
+}
 
-                <div class="row neutral2row">
+.pweb2 {
+    font-size: 16px;
+    letter-spacing: -2;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4c5160;
+}
 
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <h1 class="heading2 bottompagetextcolour h1play">Choose a deck, <br>create a bond, <br>start a conversation</h1>
-                    </div>
+/*Dark paragraph attributes, play page.*/
 
-                </div>
+.pplay2 {
+    padding-top: 30px;
+    padding-bottom: 85px;
+}
 
-                <!--//////////////////////////ROW 9/////////////////////////////////-->
+/*Paragraph spacing, play page.*/
 
-                <div class="row neutral2row">
+.h1play {
+    padding-bottom: 70px;
+}
 
-                    <div class="col-xl-10 offset-xl-1 col-sm-12">
-                        <hr class="keylinedark2">
-                    </div>
+/*Heading spacing, play page.*/
 
-                </div>
+.footer3 {
+    font-size: 40px;
+    letter-spacing: -2;
+    line-height: 46px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #4c5160;
+}
 
-                <!--//////////////////////////ROW 10////////////////////////////////-->
+/*Footer attributes, play page.*/
 
-                <!--/////////////////////START OF CARDS/////////////////////////////-->
+.captionspacing {
+    padding-top: 30px;
+    padding-bottom: 185px;
+}
 
-                <div class="row neutral2row">
-
-                    <!--//////////////////COMMUNICATION CARD SECTION////////////////////-->
-
-                    <div class="col-xl-3 offset-xl-1 col-sm-12">
-
-                        <div class="flip-container cardcentered" ontouchstart="this.classList.toggle('hover')">
-
-                            <div class="flipper">
-
-                                <div class="back">
-
-                                    <div class="row">
-
-                                        <div id="carouselexample1" class="carousel slide cardmargin" data-ride="carousel">
-                                            <div class="carousel-inner">
-
-                                                <div class="carousel-item active ">
-                                                    <img class="d-block" src="/images/Cards4.png" alt="First slide" width="320px" height="450px">
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <img class="d-block" src="/images/Cards7.png" alt="Second slide" width="320px" height="450px">
-                                                </div>
-                                            </div>
-
-                                            <a class="carousel-control-prev" href="#carouselexample1" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselexample1" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="front">
-                                    <!--back-content-->
-                                    <div>
-                                        <img src="images/Cards.png" height="450px">
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="cardtextheight">
-                            <h3 class="heading4 centered captionspacing">Communication </h3>
-                        </div>
-
-                    </div>
-
-                    <!--//////////////////PRIVACY CARD SECTION//////////////////////////-->
-
-                    <div class="col-xl-3 offset-1 col-sm-12 card-container cardspacing">
-
-                        <div class="flip-container cardcentered" ontouchstart="this.classList.toggle('hover')">
-
-                            <div class="flipper">
-
-                                <div class="back">
-
-                                    <div class="row">
-
-                                        <div id="carouselexample2" class="carousel slide cardmargin" data-ride="carousel">
-                                            <div class="carousel-inner">
-
-                                                <div class="carousel-item active">
-                                                    <img class="d-block" src="/images/Cards5.png" alt="First slide" width="320px" height="450px">
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <img class="d-block" src="/images/Cards8.png" alt="Second slide" width="320px" height="450px">
-                                                </div>
-                                            </div>
-
-                                            <a class="carousel-control-prev" href="#carouselexample2" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselexample2" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="front">
-
-                                    <div>
-                                        <img src="images/Cards2.png" height="450px">
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="cardtextheight">
-                            <h3 class="heading4 centered captionspacing">Privacy</h3>
-                        </div>
-
-                    </div>
-
-                    <!--///////////////SCREEN TIME CARD SECTION////////////////////////-->
-
-                    <div class="col-xl-3 offset-1 col-sm-12 card-container cardspacing">
-
-                        <div class="flip-container cardcentered" ontouchstart="this.classList.toggle('hover')">
-
-                            <div class="flipper">
-
-                                <div class="back">
-
-                                    <div class="row">
-
-                                        <div id="carouselexample3" class="carousel slide cardmargin" data-ride="carousel">
-                                            <div class="carousel-inner">
-
-                                                <div class="carousel-item active ">
-                                                    <img class="d-block" src="images/Cards6.png" alt="First slide" width="320px" height="450px">
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <img class="d-block" src="images/Cards9.png" alt="Second slide" width="320px" height="450px">
-                                                </div>
-
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselexample3" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselexample3" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="front">
-
-                                    <div>
-                                        <img src="images/Cards3.png" height="450px">
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="cardtextheight">
-                            <h3 class="heading4 centered captionspacing">Screen Time</h3>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!--This div closes the row containtaining the 3 cards-->
-
-                <!--/////////////////////END OF CARDS/////////////////////////////-->
-
-                <!--//////////////////////////ROW 11////////////////////////////////-->
-
-                <div class="row neutral2row">
-
-                    <div class="col-xl-10 offset-xl-1 col-sm-12">
-                        <hr class="keylinedark">
-                    </div>
-
-                </div>
-
-                <!--//////////////////////////ROW 12////////////////////////////////-->
-
-                <div class="row neutral2row endpageplay">
-
-                    <div class="col-xl-5 offset-xl-1 col-sm-12">
-                        <h3 class="footer footer3">Try our online version <br>or download our PDF.</h3>
-                    </div>
-
-                    <div class="col-xl-4 offset-xl-1 col-sm-12">
-                        <a class="footer footer3 rightallign hoverdownloadnow" href="https://drive.google.com/drive/folders/1NxaZ0QoH8lCyfxH7beVOMarELU3kyww1" download><img id="arrow" class="arrowpadding" src="images/arrows_2.png" width="30px" height="30px"><span class="textarrowmove">Download now.</span></a>
-                    </div>
-
-                </div>
-
-            </div>
-            <!--Closing tag for website content-->
-
-            <!--Start of script for parallax-->
-
-
-            <script>
-                var ParallaxManager, ParallaxPart;
-
-                ParallaxPart = (function() {
-                    function ParallaxPart(el) {
-                        this.el = el;
-                        this.speed = parseFloat(this.el.getAttribute('data-parallax-speed'));
-                        this.maxScroll = parseInt(this.el.getAttribute('data-max-scroll'));
-                    }
-
-                    ParallaxPart.prototype.update = function(scrollY) {
-                        if (scrollY > this.maxScroll) {
-                            return;
-                        }
-                        var offset = -(scrollY * this.speed);
-                        this.setYTransform(offset);
-                    };
-
-                    ParallaxPart.prototype.setYTransform = function(val) {
-                        this.el.style.webkitTransform = "translate3d(0, " + val + "px, 0)";
-                        this.el.style.MozTransform = "translate3d(0, " + val + "px, 0)";
-                        this.el.style.OTransform = "translate3d(0, " + val + "px, 0)";
-                        this.el.style.transform = "translate3d(0, " + val + "px, 0)";
-                        this.el.style.msTransform = "translateY(" + val + "px)";
-                    };
-
-                    return ParallaxPart;
-
-                })();
-
-                ParallaxManager = (function() {
-                    ParallaxManager.prototype.parts = [];
-
-                    function ParallaxManager(elements) {
-                        if (Array.isArray(elements) && elements.length) {
-                            this.elements = elements;
-                        }
-                        if (typeof elements === 'object' && elements.item) {
-                            this.elements = Array.prototype.slice.call(elements);
-                        } else if (typeof elements === 'string') {
-                            this.elements = document.querySelectorAll(elements);
-                            if (this.elements.length === 0) {
-                                throw new Error("Parallax: No elements found");
-                            }
-                            this.elements = Array.prototype.slice.call(this.elements);
-                        } else {
-                            throw new Error("Parallax: Element variable is not a querySelector string, Array, or NodeList");
-                        }
-                        for (var i in this.elements) {
-                            this.parts.push(new ParallaxPart(this.elements[i]));
-                        }
-                        window.addEventListener("scroll", this.onScroll.bind(this));
-                    }
-
-                    ParallaxManager.prototype.onScroll = function() {
-                        window.requestAnimationFrame(this.scrollHandler.bind(this));
-                    };
-
-                    ParallaxManager.prototype.scrollHandler = function() {
-                        var scrollY = Math.max(window.pageYOffset, 0);
-                        for (var i in this.parts) {
-                            this.parts[i].update(scrollY);
-                        }
-                    };
-
-                    return ParallaxManager;
-
-                })();
-
-                new ParallaxManager('.parallax-layer');
-
-            </script>
-
-        </div>
-        <!--Closing tag for parallax row-->
-
-        <!--///////////////////////END OF PARALLAX//////////////////////////-->
-
-    </div>
-    <!--Closing tag for parent container-->
-
-    <!-- Optional JavaScript -->
-    <!--Interaction-->
-    <!--Don't delete because Bootstrap needs it to work but we don't need to know it or use it in our own code-->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+/*caption spacing play page*/
+
+.hoverdownloadnow:hover {
+    color: #efb25d;
+    text-decoration: none;
+}
+
+/*Hover attributes, play page.*/
+
+.endpageplay {
+    padding-bottom: 140px;
+}
+
+/*End page spacing, play page.*/
+
+/*///////END OF ATTRIBUTES AND SPACING/////////////*/
+
+/*//////////////START OF LINE BREAKS///////////////*/
+
+.rwd-line {
+    display: block;
+}
+
+/*//////////////END OF LINE BREAKS/////////////////*/
+
+/*//////////////START OF PARALLAX//////////////////*/
+
+.rowheight {
+    height: 675px;
+}
+
+/*Height of parallax.*/
+
+.parallax-container {
+    position: fixed;
+    overflow: visible;
+    width: 100%;
+    height: 675px;
+}
+
+.parallax-layer {
+    width: 100%;
+    height: 675px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-position: bottom right;
+    background-repeat: repeat-x;
+    background-size: 1200px 650px;
+}
+
+.layer-6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    top: 150px;
+    z-index: 30;
+}
+
+.contentindex {
+    position: absolute;
+    top: 675px;
+    background: rgb(98, 179, 190);
+}
+
+.contenttopics {
+    position: absolute;
+    top: 675px;
+    background: rgb(236, 154, 102);
+}
+
+.contentplay {
+    position: absolute;
+    top: 675px;
+    background: rgb(241, 186, 109);
+}
+
+/*Index parallax*/
+.layer-0 {
+    top: 0;
+    z-index: 5;
+    background: #fff8e8;
+    background-image: url(../images/Layer_BG_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: bottom right;
+}
+
+.layer-1 {
+    top: 0px;
+    z-index: 10;
+    background-image: url(../images/Layer_MG_1.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-2 {
+    top: 0px;
+    z-index: 15;
+    background-image: url(../images/Layer_FG_1.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-3 {
+    top: 0px;
+    z-index: 20;
+    background-image: url(../images/Layer_FGFG_1.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+/*Topics parallax*/
+.layer-8 {
+    top: 0;
+    z-index: 5;
+    background: #fff8e8;
+    background-image: url(../images/Layer_BG_2.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+    background-position: bottom right;
+}
+
+.layer-9 {
+    top: 0px;
+    z-index: 10;
+    background-image: url(../images/Layer_MG_2.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-10 {
+    top: 0px;
+    z-index: 15;
+    background-image: url(../images/Layer_FG_2.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-11 {
+    top: 0px;
+    z-index: 20;
+    background-image: url(../images/Layer_FGFG_2.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+/*Play Parallax*/
+.layer-12 {
+    top: 0;
+    z-index: 5;
+    background: #fff8e8;
+    background-image: url(../images/Layer_BG_3.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+    background-position: bottom right;
+}
+
+.layer-13 {
+    top: 0px;
+    z-index: 10;
+    background-image: url(../images/Layer_MG_3.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-14 {
+    top: 0px;
+    z-index: 15;
+    background-image: url(../images/Layer_FG_3.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+.layer-15 {
+    top: 0px;
+    z-index: 20;
+    background-image: url(../images/Layer_FGFG_3.png);
+    background-repeat: no-repeat;
+    background-size: 1200px, 650px;
+}
+
+/*//////////////END OF PARALLAX////////////////////*/
+
+/*//////////////START OF BLOBS/////////////////////*/
+
+.topblobrowheight {
+    height: 287px;
+}
+
+.bottomblobrowheight {
+    height: 371px;
+}
+
+.backgroundblobs {
+    background: url(../images/blueblobs.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.backgroundblobs2 {
+    background: url(../images/blueblobs2.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.backgroundblobs3 {
+    background: url(../images/orangeblobs.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.backgroundblobs4 {
+    background: url(../images/orangeblobs2.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.backgroundblobs5 {
+    background: url(../images/yellowblobs.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.backgroundblobs6 {
+    background: url(../images/yellowblobs2.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/*//////////////END OF BLOBS///////////////////////*/
+
+/*//////////////START OF ARROWS////////////////////*/
+
+@-webkit-keyframes arrow-jump {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -0-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+#arrow {
+    -webkit-animation: arrow-jump 1s infinite;
+    /*Safari 4+*/
+    -moz-animation: arrow-jump 1s infinite;
+    /*Fx 5+*/
+    -o-animation: arrow-jump 1s infinite;
+    /*Opera 12+*/
+    animation: arrow-jump 1s infinite;
+    /*IE 10+, Fx 29+*/
+}
+
+.arrowpadding {
+    padding-bottom: 6px;
+}
+
+.arrowpadding:hover {
+    color: #4c5160;
+    text-decoration: none;
+}
+
+.textarrowmove {
+    padding-left: 15px;
+}
+
+/*//////////////END OF ARROWS//////////////////////*/
+
+/*//////////////START OF FLOAT HOVER///////////////*/
+
+.hvr-float {
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+    transform: translateY(-25px);
+}
+
+/*//////////////END OF FLOAT HOVER/////////////////*/
+
+/*//////////////START OF TEXT HOVER////////////////*/
+
+/* Parent Container */
+.content_img {
+    position: relative;
+    float: center;
+}
+
+/* Hover on Parent Container */
+.content_img:hover {
+    cursor: pointer;
+}
+
+/* Child Text Container */
+/*div1*/
+.content_img div1 {
+    position: absolute;
+    top: 7%;
+    right: 107%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div1 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div2*/
+.content_img div2 {
+    position: absolute;
+    top: 7%;
+    right: 257%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div2 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div3*/
+.content_img div3 {
+    position: absolute;
+    top: 7%;
+    right: 407%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div3 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div4*/
+.content_img div4 {
+    position: absolute;
+    top: 7%;
+    right: 107%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div4 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div5*/
+.content_img div5 {
+    position: absolute;
+    top: 7%;
+    right: 257%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div5 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div6*/
+.content_img div6 {
+    position: absolute;
+    top: 7%;
+    right: 407%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div6 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div7*/
+.content_img div7 {
+    position: absolute;
+    top: 7%;
+    right: 107%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div7 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div8*/
+.content_img div8 {
+    position: absolute;
+    top: 7%;
+    right: 257%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div8 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div9*/
+.content_img div9 {
+    position: absolute;
+    top: 7%;
+    right: 407%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div9 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div10*/
+.content_img div10 {
+    position: absolute;
+    top: 7%;
+    right: 107%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div10 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div11*/
+.content_img div11 {
+    position: absolute;
+    top: 7%;
+    right: 257%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div11 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*div12*/
+.content_img div12 {
+    position: absolute;
+    top: 7%;
+    right: 407%;
+    color: #4c5160;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div12 {
+    visibility: visible;
+    opacity: 1;
+    width: 190px;
+}
+
+/*//////////////END OF TEXT HOVER//////////////////*/
+
+/*//////////////START OF CARDS/////////////////////*/
+
+.cardmarginweb {
+    padding-left: 75px;
+}
+
+.cardrowheight {
+    background-color: #f3e6d2;
+}
+
+.flip-container {
+    perspective: 1000px;
+    float: left;
+
+    &:not(:first-child) {
+        margin-left: 100px;
+    }
+}
+
+/*Entire container, keeps perspective.*/
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/*Flip the pane when hovered.*/
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.flipper {
+    transition: .6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/*Flip speed goes here.*/
+
+.front,
+.back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Hide back of pane during swap.*/
+
+.back {
+    z-index: 2;
+    background: #1e9dd5;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1e9dd5 0%, #475ca8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e9dd5 0%, #475ca8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e9dd5 0%, #475ca8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*firefox*/
+    transform: rotateY(180deg);
+}
+
+/*Front pane, placed above back.*/
+
+.front {
+    transform: rotateY(0deg);
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+/*Back, initially hidden pane.*/
+
+.cardmargin {
+    margin-left: 15px;
+}
+
+.cardspacing {
+    margin-left: 50px;
+}
+
+/* Card spacing.*/
+
+/*////////////////END OF CARDS/////////////////////*/
+
+/*///////////////START OF MOBILE///////////////////*/
+
+@media only screen and (max-width: 1200px) {
+
+    /*///////////////START OF MOBILE NAV///////////////*/
+
+    .navwebfont {
+        font-size: 24px;
+        line-height: 33px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        color: #fff8e8;
+    }
+
+    /*///////////////END OF MOBILE NAV/////////////////*/
+
+    /*/////START OF MOBILE ATTRIBUTES AND SPACING//////*/
+
+    .h2playtop {
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .contentplayspacing {
+        padding-top: 270px;
+    }
+
+    .toppagepadding {
+        padding-top: 80px;
+    }
+
+    .toppagepaddingtitle {
+        padding-top: 0px;
+    }
+
+    .contenthrspacing {
+        padding-top: 120px;
+    }
+
+    .rightallign {
+        text-align: left;
+    }
+
+    .endpagehome {
+        padding-bottom: 0px;
+    }
+
+    .heading1 {
+        font-size: 32px;
+        line-height: 38px;
+        padding-left: 30px;
+        padding-top: 120px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 30px;
+        text-align: left;
+        margin-top: -150px;
+    }
+
+    .heading2 {
+        font-size: 32px;
+        line-height: 38px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .heading2spacing {
+        padding-top: 10px;
+    }
+
+    .pweb {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .keyline {
+        border-top: .5px solid #fff8e8;
+        /* padding-bottom: 10px;*/
+        width: 85%;
+        margin-top: 5px;
+    }
+
+    .footer {
+        font-size: 32px;
+        line-height: 38px;
+        padding-left: 30px;
+        margin-top: -40px;
+    }
+
+    .heading3 {
+        font-size: 40px;
+        line-height: 46px;
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+
+    .keylinedark {
+        border-top: .5px solid #4c5160;
+        padding-bottom: 15px;
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .heading4 {
+        font-size: 32px;
+        line-height: 44px;
+        padding-left: 30px;
+        /*   padding-top: 20px;*/
+    }
+
+    .pweb2 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer3 {
+        font-size: 32px;
+        line-height: 38px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+    }
+
+    .phome {
+        padding-top: 10px;
+    }
+
+    .ptopic {
+        padding-top: 15px;
+    }
+
+    .contenthrspacing2 {
+        padding-top: 600px;
+    }
+
+    .topicslookmarginhr {
+        margin-top: -200px;
+    }
+
+    .topicslookmargin {
+        margin-top: -180px;
+    }
+
+    .h1topic2 {
+        padding-top: 125px;
+    }
+
+    .icon {
+        padding-left: 30px;
+    }
+
+    .playextraheight {
+        background-color: rgb(241, 186, 109);
+        /* background-color: red;*/
+        height: 280px;
+    }
+
+    .h2playbottom {
+        margin-top: -370px;
+        padding-bottom: 10px;
+    }
+
+    .h2playbottom2 {
+        margin-top: -140px;
+        padding-bottom: 10px;
+    }
+
+    .h1play {
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+
+    .cardtextheight {
+        padding-top: 470px;
+    }
+
+    .captionspacing {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    /*///////END OF MOBILE ATTRIBUTES AND SPACING//////*/
+
+    /*///////////START OF MOBILE LINE BREAKS///////////*/
+
+    .rwd-line {
+        display: inline;
+    }
+
+
+    .rwd-block {
+        display: block;
+    }
+
+    /*//////////END OF MOBILE LINE BREAKS//////////////*/
+
+    /*/////////////START OF MOBILE PARALLAX////////////*/
+
+    .layer-0 {
+        top: 0;
+        z-index: 5;
+        background: #fff8e8;
+        background-image: url(../images/Layer_BG_1_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: bottom right;
+    }
+
+    .layer-1 {
+        top: 0px;
+        z-index: 10;
+        background-image: url(../images/Layer_MG_1_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-2 {
+        top: 0px;
+        z-index: 15;
+        background-image: url(../images/Layer_FG_1_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-3 {
+        top: 0px;
+        z-index: 20;
+        background-image: url(../images/Layer_FGFG_1_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-8 {
+        top: 0;
+        z-index: 5;
+        background: #fff8e8;
+        background-image: url(../images/Layer_BG_2_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: bottom right;
+    }
+
+    .layer-9 {
+        top: 0px;
+        z-index: 10;
+        background-image: url(../images/Layer_MG_2_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-10 {
+        top: 0px;
+        z-index: 15;
+        background-image: url(../images/Layer_FG_2_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-11 {
+        top: 0px;
+        z-index: 20;
+        background-image: url(../images/Layer_FGFG_2_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-12 {
+        top: 0;
+        z-index: 5;
+        background: #fff8e8;
+        background-image: url(../images/Layer_BG_3_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: bottom right;
+    }
+
+    .layer-13 {
+        top: 0px;
+        z-index: 10;
+        background-image: url(../images/Layer_MG_3_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-14 {
+        top: 0px;
+        z-index: 15;
+        background-image: url(../images/Layer_FG_3_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .layer-15 {
+        top: 0px;
+        z-index: 20;
+        background-image: url(../images/Layer_FGFG_3_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+    }
+
+    .rowheight {
+        height: 576px;
+    }
+
+    .parallax-container {
+        position: fixed;
+        overflow: visible;
+        width: 100%;
+        height: 576px;
+    }
+
+    .parallax-layer {
+        width: 100%;
+        height: 576px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        /*background-size: 1200px 650px;*/
+    }
+
+    .content1 {
+        position: absolute;
+        top: 576px;
+        background-color: rgb(98, 179, 190);
+    }
+
+    .content2 {
+        position: absolute;
+        top: 576px;
+        background-color: rgb(236, 154, 102);
+    }
+
+    .content3 {
+        position: absolute;
+        top: 576x;
+        background-color: rgb(241, 186, 109);
+        margin-top: -99px;
+
+    }
+
+
+    /*/////////////END OF MOBILE PARALLAX//////////////*/
+
+    /*/////////////START OF MOBILE BLOBS///////////////*/
+
+    .topblobrowheight {
+        height: 287px;
+
+    }
+
+    .bottomblobrowheight {
+        height: 372px;
+    }
+
+    .backgroundblobs {
+        background: url(../images/blueblobsmobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .backgroundblobs2 {
+        background: url(../images/blueblobs2mobilept2.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .backgroundblobs3 {
+        background: url(../images/orangeblobsmobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .backgroundblobs4 {
+        background: url(../images/orangeblobs2mobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .backgroundblobs5 {
+        background: url(../images/yellowblobsmobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .backgroundblobs6 {
+        background: url(../images/yellowblobs2mobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    /*///////////////END OF MOBILE BLOBS///////////////*/
+
+    /*/////////START OF MOBILE FLOAT HOVER/////////////*/
+
+    .hvr-float {
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.2s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+    }
+
+    .hvr-float:hover,
+    .hvr-float:focus,
+    .hvr-float:active {
+        transform: translateY(-25px);
+    }
+
+    /*//////////END OF MOBILE FLOAT HOVER//////////////*/
+
+    /*//////////START OF MOBILE TEXT HOVER/////////////*/
+
+    /* Parent Container */
+    .content_img {
+        position: relative;
+        float: center;
+    }
+
+    /* Hover on Parent Container */
+    .content_img:hover {
+        cursor: pointer;
+    }
+
+    /* Child Text Container */
+    /*div1*/
+
+    .content_img div1 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div1 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 30% 20% 20% 30%;
+
+    }
+
+    /*div2*/
+    .content_img div2 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div2 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+
+    }
+
+    /*div3*/
+    .content_img div3 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div3 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 30% 20% 20% 30%;
+
+    }
+
+    /*div4*/
+    .content_img div4 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div4 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*div5*/
+    .content_img div5 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div5 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10% 20% 20% 30%;
+    }
+
+    .content_img div6 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div6 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 30% 20% 20% 30%;
+    }
+
+    /*div7*/
+    .content_img div7 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div7 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*div8*/
+    .content_img div8 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div8 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*div9*/
+    .content_img div9 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div9 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*div10*/
+    .content_img div10 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div10 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10% 20% 20% 30%;
+    }
+
+    /*div11*/
+    .content_img div11 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div11 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*div12*/
+    .content_img div12 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        color: #4c5160;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0s linear;
+        transition: visibility 0s, opacity 0s linear;
+    }
+
+    .content_img:hover div12 {
+        visibility: visible;
+        opacity: 1;
+        color: #4c5160;
+        background-color: #f4ecdc;
+        height: 250px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20% 20% 20% 30%;
+    }
+
+    /*//////////END OF TEXT MOBILE HOVER///////////////*/
+
+    /*////////////START OF MOBILE CARDS////////////////*/
+
+    .cardcentered {
+        margin-left: 5%;
+    }
+
+    .cardminusmargin {
+        margin-left: 0px;
+    }
+
+    .cardspacing {
+        margin-left: 0px;
+    }
+
+
+    /* Card spacing.*/
+
+    /*//////////////END OF MOBILE CARDS////////////////*/
+
+}
+
+/*///////////////END OF MOBILE/////////////////////*/
