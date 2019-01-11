@@ -322,7 +322,7 @@ body {
 /*Dark type, topics and play page.*/
 
 .contenthrspacing3 {
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 /*Keyline spacing dark, topics page.*/
@@ -356,7 +356,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     color: #4c5160;
-    margin-top: -50px;
+    /* margin-top: -50px;*/
 }
 
 /*All heading 3, topics and play pages.*/
@@ -369,6 +369,10 @@ body {
     font-weight: 800;
     color: #4c5160;
     /*    padding-top: 35px;*/
+}
+
+.2maintips {
+    margin-left: 30px;
 }
 
 /*All heading 4, topics and play pages.*/
@@ -1215,7 +1219,7 @@ body {
         font-size: 32px;
         line-height: 38px;
         padding-left: 30px;
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .heading2spacing {
@@ -1260,7 +1264,7 @@ body {
     .heading4 {
         font-size: 32px;
         line-height: 44px;
-        padding-left: 15px;
+        padding-left: 30px;
         /*   padding-top: 20px;*/
     }
 
@@ -1285,7 +1289,7 @@ body {
     }
 
     .ptopic {
-        padding-top: 35px;
+        padding-top: 15px;
     }
 
     .contenthrspacing2 {
@@ -1293,11 +1297,11 @@ body {
     }
 
     .topicslookmarginhr {
-        margin-top: -160px;
+        margin-top: -240px;
     }
 
     .topicslookmargin {
-        margin-top: -140px;
+        margin-top: -220px;
     }
 
     .h1topic2 {
@@ -1309,8 +1313,9 @@ body {
     }
 
     .playextraheight {
-        height: 300px;
-        background-color: rgb(241, 186, 109); height: 200px;
+        background-color: rgb(241, 186, 109);
+        /* background-color: red;*/
+        height: 280px;
     }
 
     .h2playbottom {
@@ -1602,7 +1607,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1629,7 +1634,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1656,7 +1661,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1683,7 +1688,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1709,13 +1714,13 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
         font-size: 16px;
         line-height: 22px;
-        padding: 20% 20% 20% 30%;
+        padding: 10% 20% 20% 30%;
     }
 
     .content_img div6 {
@@ -1734,7 +1739,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1760,7 +1765,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1786,7 +1791,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1812,7 +1817,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1838,7 +1843,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1864,7 +1869,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1890,7 +1895,7 @@ body {
         opacity: 1;
         color: #4c5160;
         background-color: #f4ecdc;
-        height: 300px;
+        height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
@@ -1904,7 +1909,7 @@ body {
     /*////////////START OF MOBILE CARDS////////////////*/
 
     .cardcentered {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .cardminusmargin {
