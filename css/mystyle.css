@@ -1219,7 +1219,7 @@ body {
         font-size: 32px;
         line-height: 38px;
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .heading2spacing {
@@ -1238,6 +1238,7 @@ body {
         /* padding-bottom: 10px;*/
         width: 85%;
         margin-top: 5px;
+        padding-bottom: 30px;
     }
 
     .footer {
@@ -1765,7 +1766,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
@@ -1791,7 +1792,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
@@ -1817,7 +1818,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
@@ -1843,7 +1844,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
@@ -1869,7 +1870,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
@@ -1895,7 +1896,7 @@ body {
         visibility: visible;
         opacity: 1;
         color: #4c5160;
-        background-color: #f4ecdc;
+        background-color: #f3e6d2;
         height: 250px;
         width: 100%;
         font-family: 'Nunito', sans-serif;
